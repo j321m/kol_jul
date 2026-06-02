@@ -24,7 +24,21 @@ lm-eval = ">=0.4.0"
 jupyter = "*"
 ipykernel = "*"
 matplotlib = "*"
-torch = "==2.6.0"
-torchvision = "==0.21.0"
 bitsandbytes = "*"
 accelerate = "*"
+
+[target.linux-64.pypi-dependencies]
+torch = { version = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" }
+torchvision = { version = "==0.22.1", index = "https://download.pytorch.org/whl/cu128" }
+triton = "==3.3.1"
+
+[target.linux-aarch64.pypi-dependencies]
+torch = { version = "==2.7.1", index = "https://download.pytorch.org/whl/cu128" }
+torchvision = { version = "==0.22.1", index = "https://download.pytorch.org/whl/cu128" }
+
+[target.linux-aarch64.dependencies]
+triton = "==3.3.1"
+
+[target.osx-arm64.pypi-dependencies]
+torch = "==2.6.0"
+torchvision = "==0.21.0"
