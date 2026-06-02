@@ -2,7 +2,7 @@
 authors = ["Janek <jan.malasnicki@gmail.com>"]
 channels = ["conda-forge"]
 name = "basic_ml"
-platforms = ["linux-64", "linux-aarch64", "osx-arm64"]   # drop osx-64 (Intel Mac)
+platforms = ["linux-64", "linux-aarch64", "osx-arm64"]
 version = "0.1.0"
 
 [tasks]
@@ -25,6 +25,6 @@ jupyter = "*"
 ipykernel = "*"
 matplotlib = "*"
 torch = "==2.6.0"
-
+torchvision = "==0.21.0"
 bitsandbytes = "*"
 accelerate = "*"
